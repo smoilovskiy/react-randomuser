@@ -1,6 +1,6 @@
 import React from "react";
 
-const User = ({ name, location, email, picture }) => {
+const User = ({ name, location, email, gender, picture, dob, nat }) => {
   return (
     <div className="random-user">
       <div className="user-image">
@@ -8,8 +8,10 @@ const User = ({ name, location, email, picture }) => {
       </div>
       <div className="user-details">
           <p className="user-name">{name.first} {name.last}</p>
-          <p className="user-email">{email}</p> 
-          {/* <p>Country:</p> {location.country} */}
+          <p className="user-gender">{gender}</p>
+          <p className="user-email">{email}</p>
+          <p className="user-dob">{dob.date.split('T')[0]}</p>
+          <p className="user-nat">{nat}</p>
       </div>
 
 

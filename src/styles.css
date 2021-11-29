@@ -10,25 +10,52 @@ body {
   width: 800px;
 }
 
-.user-name {
-  font-size: 16px;
-  font-weight: 500;
-}
-
-.user-email {
-  font-size: 12px;
-  font-weight: 300;
-}
-
 .random-user {
-  width: 150px;
-  height: 200px;
+  width: 136px;
+  height: 210px;
   border: 1px solid rgb(148, 148, 148);
-
+  margin: 4px;
 }
 
 .user-list {
   display: flex;
   flex-wrap: wrap;
+}
 
+.user-details {
+  margin: 4px;
+}
+
+.user-image {
+  margin-top: 4px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.user-name {
+  font-size: 12px;
+  font-weight: 600;
+}
+
+.user-email {
+  font-size: 12px;
+  font-weight: 300;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.user-gender {
+  font-size: 12px;
+  font-weight: 300;
+}
+
+.user-dob {
+  font-size: 12px;
+  font-weight: 300;
+}
+
+.user-nat {
+  font-size: 12px;
+  font-weight: 300;
 }
